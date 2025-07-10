@@ -15,7 +15,7 @@ rod_volume = []
 for i in range(num_rods):
     col_diam, col_len = st.columns([0.3,0.7])
     rod_diam.append(col_diam.number_input('Rod Diamter (mm): ', min_value=0.01, value=7.0, key=f"num_{i}"))
-    rod_length.append(col_len.slider('Rod Length (mm): ', min_value=0.0, max_value=100.0, step=0.1, key=f"slider_{i}"))
+    rod_length.append(col_len.slider('Rod Length (mm): ', min_value=0.0, max_value=100.0, step=0.1, key=f"slider_{i}", format="%0.1f"))
 
     #rod_diam.append(st.number_input('Rod Diamter (mm): ', min_value=0.01, value=7.0, key=f"num_{i}"))
     #rod_length.append(st.slider('Rod Length (mm): ', min_value=0.0, max_value=100.0, step=0.1, key=f"slider_{i}"))
