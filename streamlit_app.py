@@ -11,6 +11,7 @@ pages = {
     ],
     "Rod Length Calculators": [
     st.Page("calc_rod_len_from_sp_diam.py", title="One Rod From Sphere Diameter"),
+    st.Page("calc_two_rod_lengths.py", title="Two Rods")
     ],
 }
 
